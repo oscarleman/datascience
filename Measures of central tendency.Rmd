@@ -1,0 +1,122 @@
+---
+title: "Measures of central tendency"
+author: "OscarPerez"
+date: "4/20/2021"
+output: html_document
+---
+```{r echo=FALSE}
+#Oscar Alfredo Perez Ramirez 20 April 2021
+#Import the dataset in RStudio
+```
+
+## Measures of central tendency and measures of variability and the relationships for "**rating**"
+```{r rating}
+View(attitude)
+mean(attitude$rating)
+median(attitude$rating)
+mode(attitude$rating)
+max(attitude$rating)
+min(attitude$rating)
+range(attitude$rating)
+quantile(attitude$rating)
+IQR(attitude$rating)
+var(attitude$rating)
+sd(attitude$rating)
+```
+## Measures of central tendency and measures of variability and the relationships for "**complaints**"
+
+```{r complaints}
+mean(attitude$complaints)
+median(attitude$complaints)
+mode(attitude$complaints)
+max(attitude$complaints)
+min(attitude$complaints)
+range(attitude$complaints)
+quantile(attitude$complaints)
+IQR(attitude$complaints)
+var(attitude$complaints)
+sd(attitude$complaints)
+```
+## Measures of central tendency and measures of variability and the relationships for "**privileges**"
+
+```{r privileges}
+mean(attitude$privileges)
+median(attitude$privileges)
+mode(attitude$privileges)
+max(attitude$privileges)
+min(attitude$privileges)
+range(attitude$privileges)
+quantile(attitude$privileges)
+IQR(attitude$privileges)
+var(attitude$privileges)
+sd(attitude$privileges)
+```
+## Measures of central tendency and measures of variability and the relationships for "**learning**"
+
+```{r learning}
+mean(attitude$learning)
+median(attitude$learning)
+mode(attitude$learning)
+max(attitude$learning)
+min(attitude$learning)
+range(attitude$learning)
+quantile(attitude$learning)
+IQR(attitude$learning)
+var(attitude$learning)
+sd(attitude$learning)
+```
+## Measures of central tendency and measures of variability and the relationships for "**raises**"
+
+```{r raises}
+mean(attitude$raises)
+median(attitude$raises)
+mode(attitude$raises)
+max(attitude$raises)
+min(attitude$raises)
+range(attitude$raises)
+quantile(attitude$raises)
+IQR(attitude$raises)
+var(attitude$raises)
+sd(attitude$raises)
+```
+
+## Measures of central tendency and measures of variability and the relationships for "**critical**"
+
+```{r critical}
+mean(attitude$critical)
+median(attitude$critical)
+mode(attitude$critical)
+max(attitude$critical)
+min(attitude$critical)
+range(attitude$critical)
+quantile(attitude$critical)
+IQR(attitude$critical)
+var(attitude$critical)
+sd(attitude$critical)
+```
+
+## Measures of central tendency and measures of variability and the relationships for "**advance**"
+
+```{r advance}
+mean(attitude$advance)
+median(attitude$advance)
+mode(attitude$advance)
+max(attitude$advance)
+min(attitude$advance)
+range(attitude$advance)
+quantile(attitude$advance)
+IQR(attitude$advance)
+var(attitude$advance)
+sd(attitude$advance)
+```
+
+## **Summary**
+
+
+```{r}
+summary(attitude)
+cor(attitude)
+plot(attitude)
+library(car)
+scatterplot(attitude$rating,attitude$complaints,xlab="Rating", ylab="Complaints", main="Highest correlation", smooth=FALSE)
+```
